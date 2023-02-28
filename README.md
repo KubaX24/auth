@@ -9,6 +9,10 @@ Auth server written in go
 - when user log in, firstly is created time_token (only for one use), from where user can get jwt token
 - database is MongoDB
 
+## Docs
+https://developers.cloudflare.com/turnstile/
+https://jwt.io/introduction
+
 ---
 
 Made with love
