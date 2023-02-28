@@ -20,7 +20,7 @@ Example:
 cloudflare_secret,1x0000000000000000000000000000000AA,Turnstile secret token fot testing
 ```
 
-### _website.csv
+### _websites.csv
 Format:
 ``` csv
 website_domain*,token*,after_login_redirect*
