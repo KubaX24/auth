@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | auth.CHYTAC</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="stylesheet" href="../static/css/page.css">
+    <!--    <link rel="stylesheet" href="https://cdn.chytac.com/static/css/page.css">-->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
+</head>
+<body>
+<div id="centre">
+    <div id="loginPanel">
+        <h1><span>auth.</span>CHYTAC</h1>
+        <h2>Enter 2fa code</h2>
+        <form method="POST">
+            <div id="code">
+                <input pattern="[0-9]" type="text" id="c1" name="c1">
+                <input pattern="[0-9]" type="text" id="c2" name="c2">
+                <input pattern="[0-9]" type="text" id="c3" name="c3">
+                <input pattern="[0-9]" type="text" id="c4" name="c4">
+                <input pattern="[0-9]" type="text" id="c5" name="c5">
+                <input pattern="[0-9]" type="text" id="c6" name="c6">
+            </div>
+            <div id="buttons">
+                <button id="create" type="submit">Back</button>
+                <button id="submit" type="submit">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <div id="info">
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+    </div>
+</div>
+<script src="../static/js/code.js"></script>
+</body>
+</html>

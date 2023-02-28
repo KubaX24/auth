@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login | auth.CHYTAC</title>
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="stylesheet" href="/static/css/page.css">
+    <!--    <link rel="stylesheet" href="https://cdn.chytac.com/static/css/page.css">-->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
+</head>
+<body>
+<div id="centre">
+    <div id="loginPanel" style="height: 600px !important;">
+        <h1><span>auth.</span>CHYTAC</h1>
+        <h2>Create account</h2>
+        <form method="POST">
+            <div>
+                <label for="username" id="lb-username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div>
+                <label for="email" id="lb-email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="multi">
+                <label for="chytmail" id="lb-chytmail">chytmail</label>
+                <input type="text" id="chytmail" name="chytmail">
+                <input type="text" id="chytmail-pre" name="chytmail" value="@m.chytac.com" disabled>
+            </div>
+            <div>
+                <label for="password" id="lb-password">Password</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="password" id="lb-repassword">Again password</label>
+                <input type="password" id="repassword" name="repassword">
+            </div>
+            <div class="cf-turnstile" data-sitekey="1x00000000000000000000AA" data-theme="dark"></div>
+            <div id="buttons">
+                <button id="create" type="submit">Login</button>
+                <button id="submit" type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+    <div id="info">
+        <a href="">Terms</a>
+        <a href="">Privacy</a>
+    </div>
+</div>
+
+</body>
+<script>
+    window.onloadTurnstileCallback = function () {
+        turnstile.render('#example-container', {
+            sitekey: '1x00000000000000000000AA', //0x4AAAAAAAB5oV49F2EXf6Kq
+            theme: 'dark'
+        });
+    };
+</script>
+</html>

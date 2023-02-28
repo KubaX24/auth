@@ -1,0 +1,126 @@
+#centre{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+#info a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+#loginPanel{
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--up-color);
+    border: var(--second-color) solid 1px;
+    padding: 25px;
+    border-radius: 5px;
+    height: 410px;
+}
+
+#loginPanel h1{
+    margin: 20px;
+}
+
+#loginPanel h2{
+    margin: 0;
+    padding: 0;
+}
+
+#loginPanel form{
+    font-size: 20px;
+}
+
+#loginPanel form div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    text-align: left;
+}
+
+#loginPanel form div label{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+#loginPanel form input {
+    font-size: 17px;
+    background-color: var(--up-color);
+    border: var(--second-color) solid 1px;
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 5px;
+}
+
+#loginPanel form input:is(:focus, :hover) {
+    outline: none;
+    border: var(--main-color) solid 1px;
+}
+
+#loginPanel form #buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+    bottom: 43px;
+    width: 85%;
+}
+
+#loginPanel form #buttons #create {
+    background-color: var(--up-color);
+    border: none;
+    color: var(--main-color);
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#loginPanel form #buttons #create:hover {
+    background-color: var(--background);
+}
+
+#loginPanel form #buttons #submit {
+    background-color: var(--main-color);
+    border: none;
+    color: var(--up-color);
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#loginPanel form #buttons #submit:hover {
+    background-color: var(--second-color);
+}
+
+#loginPanel form #code{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#loginPanel form #code input{
+    width: 25px;
+    font-size: 40px;
+    text-align: center;
+    transition: .5s;
+}
+
+.multi{
+    flex-direction: row !important;
+    flex-wrap: wrap;
+}
+
+.multi label{
+    flex: 0 0 100%;
+
+}
