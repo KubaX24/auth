@@ -1,6 +1,7 @@
 package main
 
 import (
+	"auth/utils"
 	"bufio"
 	"log"
 	"os"
@@ -26,6 +27,8 @@ func getWebsiteByCode(code string) (string, string) {
 			return splitLine[0], splitLine[2]
 		}
 	}
+
+	log.Println(utils.Red + code + " [Website] was not found!")
 
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
