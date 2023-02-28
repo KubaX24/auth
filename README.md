@@ -28,6 +28,7 @@ website_domain*,token*,after_login_redirect*
 Example:
 ``` csv
 auth.example.com,very_secret_and_long_token_like_k39nlkk0BNPVmrMTrdBJ_but_longer,auth/loginin.html
+auth2.example.com,T9xbhVoZ0cr0H4kypOgbw1iqmft2IemDW99nfdyCiJijCiSKnt,login
 ```
 
 ## Docs
