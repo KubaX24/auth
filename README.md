@@ -17,7 +17,7 @@ token_name*,token*,description[optimal]
 ```
 Example:
 ``` csv
-cloudflare_secret,1x0000000000000000000000000000000AA,Turnstile secret tokenfot testing
+cloudflare_secret,1x0000000000000000000000000000000AA,Turnstile secret token fot testing
 ```
 
 ### _website.csv
