@@ -20,7 +20,7 @@ type cloudflareResponse struct {
 func checkLogin(details UserDetails, cloudflare string) (bool, string) {
 	resp, err := http.PostForm("https://challenges.cloudflare.com/turnstile/v0/siteverify",
 		url.Values{
-			"secret":   {"1x0000000000000000000000000000000AA"},
+			"secret":   {getSecretByName("cloudflare_secret")},
 			"response": {cloudflare},
 		})
 

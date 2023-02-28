@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	key = []byte("lqjrKcITgK2U9eeqOWCpU3xUiwlJH2pjucU+g9hmN0I2Wxh/Sr0inWVqfAD+oAd2")
+	key = []byte(getSecretByName("key"))
 )
 
 func Server() {
