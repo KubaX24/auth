@@ -1,6 +1,7 @@
 package main
 
 import (
+	"auth/utils"
 	"bufio"
 	"log"
 	"os"
@@ -26,6 +27,8 @@ func getSecretByName(name string) string {
 			return splitLine[1]
 		}
 	}
+
+	log.Println(utils.Red + name + " was not found!")
 
 	if err := scanner.Err(); err != nil {
 		log.Fatal(err)
