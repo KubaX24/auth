@@ -10,8 +10,8 @@ Auth server written in go
 - database is MongoDB
 
 ## Docs
-https://developers.cloudflare.com/turnstile/
-https://jwt.io/introduction
+- https://developers.cloudflare.com/turnstile/
+- https://jwt.io/introduction
 
 ---
 
