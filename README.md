@@ -38,5 +38,3 @@ auth2.example.com,T9xbhVoZ0cr0H4kypOgbw1iqmft2IemDW99nfdyCiJijCiSKnt,login
 ---
 
 Made with love
-
-© KubaX24
